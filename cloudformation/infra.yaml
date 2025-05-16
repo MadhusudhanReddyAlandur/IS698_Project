@@ -22,14 +22,14 @@ Resources:
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
-      ImageId: ami-0e58b56aa4d64231b  # Amazon Linux 2 (us-east-1)
-      KeyName: MyKeyPair              # ✅ Your key pair for SSH access
+      ImageId: ami-0e58b56aa4d64231b  
+      KeyName: MyKeyPair              
       NetworkInterfaces:
         - AssociatePublicIpAddress: true
           DeviceIndex: 0
-          SubnetId: subnet-0d019bb72c4ade3c1  # Your public subnet A
+          SubnetId: subnet-0d019bb72c4ade3c1 
           GroupSet:
-            - sg-007fb0ed16d80c8ea            # Your security group
+            - sg-007fb0ed16d80c8ea           
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
