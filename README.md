@@ -3,31 +3,15 @@
 
 # Project Overview
 
-This project automates the deployment and management of a web application infrastructure on AWS using:
--Terraform for creating networking components (VPC, subnets, security groups)
--CloudFormation for deploying EC2, RDS, and Lambda functions
--Python scripts for interacting with EC2, S3, and Lambda services
--Application Load Balancer & Auto Scaling for handling web traffic
--CloudWatch Logs to capture Lambda activity
--DynamoDB for storing application-level data
--S3 and Lambda trigger integration** for upload event logging
+This project automates the deployment and management of a web application infrastructure on AWS using: Terraform for creating networking components (VPC, subnets, security groups) ; CloudFormation for deploying EC2, RDS, and Lambda functions ; Python scripts for interacting with EC2, S3, and Lambda services ; Application Load Balancer & Auto Scaling for handling web traffic ; CloudWatch Logs to capture Lambda activity ; DynamoDB for storing application-level data ; S3 and Lambda trigger integration for upload event logging
 
 ## Repository Structure
 
-aws-infra-deployment-project/
-    terraform/
-        main.tf
-        output.tf
-    cloudformation/
-        infra.yaml
-    python-scripts/
-        s3.py
-        RetrieveEC2.py
-        RunningEC2.py
-        InvokeLambda.py
-    architecture/
-        Architecture.png
-    README.md
+terraform -> main.tf, output.tf
+| cloudformation -> infra.yaml
+| python-scripts -> s3.py, RetrieveEC2.py, RunningEC2.py, InvokeLambda.py
+| architecture -> AWS Archi.drawio.png
+| README.md
 
 ## Setup Instructions
 
@@ -88,7 +72,7 @@ python InovkeLambda.py  # Manually invokes Lambda function
 
 ## Architecture Diagram
 
-![Architecture Diagram](architecture/AWS Archi.png)
+Architecture Diagram - architecture/AWS Archi.Drawio.png)
 
 ## Contributors
 
